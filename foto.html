@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+
+    <!doctype html>
+    <html lang="ru">
+      <head>
+        <!-- Обязательные метатеги -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+        <link rel="stylesheet" type="text/css" href="css/9998.css">
+        
+       
+        <script src="dist/spotlight.bundle.js"></script>
+    
+    
+    </head>
+      
+<!-->
+<div class="art-g"
+    <!--<script src="dist/js/spotlight.min.js"></script>-->
+    <!--<link rel="stylesheet" href="dist/css/spotlight.min.css">-->
+    <!-- Custom Control: -->
+    <style>
+        /*
+         * Custom Control:
+         * ---------------
+         */
+        /* custom classes are always prefixed by "spl-" automatically */
+        .spl-like{
+            background-size: 23px;
+        }
+        /* optionally, additional state to toggle the button: */
+        .spl-like.on{
+        }
+        /*
+         * Custom Animation:
+         * -----------------
+         */
+        /* custom scene transition (slide effect) */
+        .only-this-gallery.show .spl-scene{
+            transition: transform 0.2s ease;
+        }
+        /* custom animation "visible state" (css context by custom classname "only-this-gallery" to apply these animation just on a specific gallery) */
+        .only-this-gallery.show .spl-pane > *{
+            clip-path: circle(100% at center);
+            transition: transform 0.35s ease,
+                        opacity 0.65s ease,
+                        clip-path 0.8s ease;
+        }
+        /* custom animation "hidden state" ("custom" is the name of the animation you pass as gallery option) */
+        .only-this-gallery .spl-pane .custom {
+            clip-path: circle(0px at center) ;
+            transition: transform 0.65s ease,
+                        opacity 0.65s ease;
+        }
+        /* animation state when gallery is hidden */
+        #spotlight.only-this-gallery{
+            clip-path: circle(0px at center);
+        }
+        /* animation state when gallery will open */
+        #spotlight.only-this-gallery.show{
+            clip-path: circle(100% at center);
+            transition: clip-path 0.65s ease 0.15s;
+        }
+    </style>
+    <link rel="stylesheet" href="demo/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Web's most easy to integrate lightbox gallery library. Super-lightweight, outstanding performance, no dependencies.">
+    <meta name="keywords" content="gallery, lightbox, photo-gallery, javascript-library, image-viewer, lightbox-gallery-plugin, gallery-plugin, gallery-extension, gallery-widget, lightbox-gallery, gallery-template, gallery-viewer, gallery-simple, lightbox-plugin">
+    <meta name="thumbnail" content="https://nextapps-de.github.io/spotlight/demo/favicon.png">
+    <meta property="og:url" content="https://nextapps-de.github.io/spotlight/">
+    <meta property="og:site_name" content="Spotlight.js - Modern HTML5 Image Gallery">
+    <meta property="og:image" content="https://nextapps-de.github.io/spotlight/demo/og-image.png">
+    <meta property="og:title" content="Spotlight.js - Modern HTML5 Image Gallery">
+    <meta property="og:description" content="WinBox is the web's most easy to integrate lightbox gallery library. Super-lightweight, outstanding performance, no dependencies.">
+    <meta property="og:type" content="Software">
+    <meta property="og:url" content="https://nextapps-de.github.io/spotlight/">
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" type="image/png" href="https://nextapps-de.github.io/spotlight/demo/favicon.png">
+    <link rel="icon" sizes="512x512 1024x1024" type="image/png" href="https://nextapps-de.github.io/spotlight/demo/og-image.png">
+</head>
+<div>
+    <br>
+   
+    
+    <br>
+    <h1>Фотогалерея</h1>
+    <div class="spotlight-group" data-fit="contain" data-autohide="all">
+        <a class="spotlight" href="img/2 (10).jpg" data-button="Click Me!" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" data-description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="img/2 (10).jpg" alt="Lorem ipsum dolor sit amet">
+        </a>
+        <a class="spotlight" href="img/1.jpg" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="img/1.jpg" alt="At vero eos et accusam">
+        </a>
+        <a class="spotlight" href="demo/gallery/canada-2340312.jpg" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="demo/gallery/canada-2340312-thumb.jpg" alt="Duis autem vel eum iriure dolor">
+        </a>
+    </div>
+    <br><br>
+    <h1>Видео</h1>
+    <div class="spotlight-group">
+        <div class="spotlight" data-media="image" data-src="demo/gallery/godafoss-1840758.jpg" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="demo/gallery/godafoss-1840758-thumb.jpg" alt="Duis autem vel eum iriure dolor">
+        </div>
+        <a class="spotlight" data-media="video" data-src-webm="https://youtu.be/XDPUDGL99aA" data-src-ogg="https://youtu.be/XDPUDGL99aA" data-src-mp4="https://youtu.be/XDPUDGL99aA" data-autoplay="false" data-poster="demo/gallery/poster.jpg">
+            <img src="demo/gallery/poster.jpg">
+        </a>
+        
+        <div class="spotlight" data-src="demo/gallery/brooklyn-bridge-1791001.jpg"></div>
+    </div>
+    <!-- Hidden Backstore -->
+    <div style="display: none">
+        <div id="fragment" style="width: 100%">
+            <b>Embedded Node Fragment</b><br><br>
+            <img class="image" src="demo/gallery/brooklyn-bridge-1791001-thumb.jpg" width="700" height="334">
+            <img class="image" src="demo/gallery/california-1751455-thumb.jpg" width="500" height="333">
+            <img class="image" src="demo/gallery/montana-1829251-thumb.jpg" width="500" height="331">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    
+    </script>
+
+</div>
+</section>
+</main>
+</body>
+</html>
